@@ -1,0 +1,44 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA6KZTVXHXPOQS26HE
+      secret-key: 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
+    region:
+      static: ap-south-1
+    stack:
+      auto: false
+
+#application:
+#  bucket:
+#    name: javafilesstoragebucket
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      fileSizeThreshold: 2MB
+      maxFileSize: 5MB
+      maxRequestSize: 10MB
+
+server:
+  port: 9095
+
+
+#Version: "2012-10-17"
+#Statement:
+#  - Effect: Allow
+#    Principal:
+#      AWS:
+#        - arn:aws:iam::ACCOUNT-ID:root
+#        - arn:aws:iam::ACCOUNT-ID:user/USER-NAME
+#        - arn:aws:iam::ACCOUNT-ID:role/ROLE-NAME
+#    Action: "s3:ListAllMyBuckets"
+#    Resource:
+#      - "arn:aws:s3:::*"
+
+folder-structure:
+  video-folder: "Video"
+  video-sub-folders: "Program,Promos,Fillers"
+  poster-folder: "Poster"
+  secondary-folder: "Secondary"
+
