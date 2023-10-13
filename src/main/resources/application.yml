@@ -8,16 +8,13 @@ cloud:
     stack:
       auto: false
 
-#application:
-#  bucket:
-#    name: javafilesstoragebucket
 
 spring:
   servlet:
     multipart:
       enabled: true
       fileSizeThreshold: 2MB
-      maxFileSize: 5MB
+      maxFileSize: 6MB
       maxRequestSize: 10MB
 
 server:
